@@ -33,13 +33,11 @@ input {
   border: solid 1px var(--grayishBlue);
 }
 
-input:focus{
-outline: none;
-    border: solid 2px var(--red);
-}
+
 
 #intro {
   color: white;
+  
 }
 #trial {
   font-weight: 700;
@@ -73,7 +71,7 @@ input {
 #fine-print {
   color: var(--grayishBlue);
 }
-input[type="submit"] {
+input[type="button"] {
   background-color: var(--green);
   text-align: center;
   color: white;
@@ -84,9 +82,10 @@ input[type="submit"] {
 }
 .errorText {
     color: var(--red);
-    display: none;
+    display:none;
     text-align: right;
     font-size: 12px;
+    font-style: italic;
   }
 @media (max-width: 950px) {
   body {
@@ -157,6 +156,7 @@ width: 80%;
     margin-right: 40px;
     align-self: center;
     max-width: 450px;
+  
   }
 h1{
    font-size: 30px;

@@ -39,17 +39,17 @@
      <p id="text"><span id="trial">Try it free 7 days</span>  then $20/mo. thereafter</p>  
       </div>
       <div id="form-card">
-        <form action="">
-          <input type="text" placeholder="First Name">
-          <p class="errorText">First Name cannot be empty</p>
-          <input type="text" placeholder="Last Name">
+        <form action="" name="claim" method="POST">
+          <input type="text" placeholder="First Name" name="fName" id="fName">
+          <p class="errorText" id="error1">First Name cannot be empty</p>
+          <input type="text" placeholder="Last Name" name="lName" id="lName">
           
-          <p class="errorText">Last name cannot be empty</p>
-          <input type="email" placeholder="Email Address" name="email">
-          <p class="errorText"></p>
-          <input type="password" placeholder="Password">
-          <p class="errorText"></p>
-          <input type="submit" value="Claim your free trial" onclick="">
+          <p class="errorText" id="error2">Last name cannot be empty</p>
+          <input type="email" placeholder="Email Address" name="email" id="email">
+          <p class="errorText" id="error3">Email cannot be empty</p>
+          <input type="password" placeholder="Password" name="pwd" id="pwd">
+          <p class="errorText" id="error4">Password cannot be empty</p>
+          <input type="button" value="Claim your free trial" onclick="validate()">
         </form>
 
 
@@ -65,6 +65,7 @@
         Coded by <a href="#">Your Name Here</a>.
       </p>
     </footer>
+    <script src="index.js"></script>
 </body>
 
 </html>
