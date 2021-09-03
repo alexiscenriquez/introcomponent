@@ -24,11 +24,12 @@ body {
     background-color: white;
     border-radius: 10px;
     padding:50px;
+    box-shadow: 0 5px hsla(249, 10%, 26%, 0.39);
 }
 input {
     width:95%;
   display: block;
-  margin-bottom: 20px;
+  margin-bottom: 5px;
   border-radius: 5px;
   border: solid 1px var(--grayishBlue);
 }
@@ -49,6 +50,8 @@ input {
   padding-left: 15px;
   color: var(--darkBlue);
   font-weight: 700;
+  margin-bottom: 0;
+  
 }
 #desc {
   font-size: 16px;
@@ -66,6 +69,7 @@ input {
   font-size: 12px;
   border-radius: 10px;
   width: 50%;
+  box-shadow: 0 5px hsla(249, 10%, 26%, 0.39);
 }
 
 #fine-print {
@@ -78,14 +82,26 @@ input[type="button"] {
   text-transform: uppercase;
   font-size: 12px;
   height: 50px;
-  width: 250px;
+ border: none;
+  box-shadow: 0 2px hsla(154, 59%, 51%, 0.719) ;
+}
+
+input[type="button"]:hover{
+  background-color: hsla(154, 64%, 78%, 0.829);
+  transition: 0.05s ease-in;
+  transition-property: background-color;
+}
+input[type="text"]:focus,input[type="email"]:focus,input[type="password"]:focus{
+border:solid 1pt var(--blue);
+outline: none;
 }
 .errorText {
     color: var(--red);
-    display:none;
+ opacity: 0;
     text-align: right;
     font-size: 12px;
     font-style: italic;
+margin-top: 0;
   }
 @media (max-width: 950px) {
   body {
@@ -140,6 +156,9 @@ input[type="button"] {
       width: 60%;
      margin:auto;
   }
+  input[type="button"]{
+    width: 250px;
+  }
 }
 
 @media (min-width: 951px) {
@@ -183,5 +202,8 @@ h1{
   
   font-size: 20px;
 
+}
+input[type="button"]{
+ width: 304px;
 }
 }
